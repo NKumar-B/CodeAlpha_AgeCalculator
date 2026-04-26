@@ -2,6 +2,8 @@
 
 NithyaChronix is a sleek, lightweight, and interactive Single Page Application (SPA) built to calculate a user's exact age in years, months, and days. It features a modern user interface with a dark/light mode toggle, smooth scrolling, and responsive design.
 
+**Go Live** : https://nkumar-b.github.io/CodeAlpha_AgeCalculator/
+
 <img width="1879" height="851" alt="image" src="https://github.com/user-attachments/assets/ba753b31-85c2-493c-9016-f2d7d6d0438a" /><br/>
 
 <img width="1887" height="848" alt="image" src="https://github.com/user-attachments/assets/48adc82b-9226-4ae7-984f-2d33109f0915" />
