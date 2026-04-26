@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NithyaChronix | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">NithyaChronix</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <section id="home" class="section-home">
+        <div class="banner">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Website Banner">
+            <div class="banner-text">
+                <h1>Welcome to NithyaChronix</h1>
+                <p>Modern solutions for digital experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>NithyaChronix is dedicated to building high-performance, lightweight web applications. We blend modern design systems with robust functionality to deliver seamless user experiences. Explore our tools below to see what we can do.</p>
+            
+            <button id="show-calculator-btn" class="primary-btn">Calculate Your Age</button>
+        </div>
+    </section>
+
+    <section id="calculator" class="section-padding hidden">
+        <div class="container">
+            <div class="calculator-card">
+                <h2>Age Calculator</h2>
+                <p>Enter your details below to find out your exact age.</p>
+                
+                <div class="form-group">
+                    <label for="userName">Full Name</label>
+                    <input type="text" id="userName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                
+                <button onclick="calculateAge()" class="primary-btn calculate-btn">Calculate Age</button>
+                <div id="error-message" class="error"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding alt-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us through the details below or visit our headquarters.</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:nithinkumarbadduluri@gmail.com">nithinkumarbadduluri@gmail.com</a>
+                </div><br>
+                <div class="contact-item">
+                    <strong>Mobile No:</strong> <a href="tel:+91 6281144047">+916281144047</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="#" target="_blank">www.nithyachronix.com</a>
+                </div>
+            </div>
+
+            <div class="map-wrapper">
+                <div class="place-name">
+                    <h3>Chittoor</h3>
+                    <p>Andhra Pradesh, India</p>
+                </div>
+                <div class="map-frame-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.2039424641157!2d78.80588!3d13.399695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2857541c78975%3A0x3a8391057661f917!2sNithin%20Home!5e0!3m2!1sen!2sin!4v1777197749286!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 NithyaChronix. All rights reserved.</p>
+    </footer>
+
+    <div id="result-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Calculation Complete!</h3>
+            <p id="modal-text"></p>
+            <button onclick="closeModal()" class="primary-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
