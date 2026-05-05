@@ -26,6 +26,7 @@ This project is built using strictly vanilla web technologies for maximum perfor
 - **CSS3**: Custom properties (variables) for theming, Flexbox for layout, and modern styling.
 - **JavaScript**: DOM manipulation, event handling, and date math logic.
 
+
 ## File Structure
 
 The project is modularized into three core files for easy maintenance:
